@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <!-- Custom css - Các file css do chúng ta tự viết -->
+    <link rel="stylesheet" href="public/css/details.css" type="text/css">
+    <link rel="stylesheet" href="" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>All products - Redstore</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="public/assets/logopiz.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu1.html">Menu</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <i class='bx bxs-cart' id="cart-icon"></i>
+                </ul>
+            </nav>
+            <div class="cart">
+              <h1 class="cart-title">You Cart</h1>
+              <div class="cart-content">
+              </div>
+           <!-- total -->
+           <div class="total">
+              <div class="total-tilte">Total</div>
+              <div class="total-price">$0</div>
+           </div>
+           <!-- Buy Button -->
+           <button type="button" class="btn-buy">Buy Now</button>
+           <!--Cart Close-->
+           <i class='bx bx-x' id="close-cart"></i>
+            <img src="public/image/images/menu.png" alt="" class="menu-icons" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-------------Single productd details------------>
+    <div class=" row" id="product-detail">
+        <a href="detail.html?productId=${product.id}"><img src="${product.image}" alt="">
+            </a>
+        
+           
+    </div>
+    <!--------Title-------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h3>Related Products</h3>
+            <p>View More</p>
+        </div>
+    </div>
+    <!--------products------>
+    <div class="small-container1">
+        <div class="row1" ">
+            <div class="small-container">
+                <div class="row1">
+                    <div class="col-4">
+                        <img src="public/assets/pz1-1.png" alt="">
+                        <div class = "product-title">Pizza Phomai</div>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                        
+                        <div class="cart-price">$586</div><i class='bx bxs-cart add-cart'></i>
+                    </div>
+                    <div class="col-4">
+                        <img src="public/assets/pz1-2.png" alt="">
+                        <div class = "product-title">Pizza Phomai cay</div>
+                        <div class="rating">
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                        </div>
+                        
+                        <div class="cart-price">$536</div><i class='bx bxs-cart add-cart'></i>
+                        
+                    </div>
+                    <div class="col-4">
+                        <img src="public/assets/pz1-4.png" alt="">
+                        <div class = "product-title">Pizza Xuc xich</div>
+                        <div class="rating">
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                        </div>
+                        
+                        <div class="cart-price">$564</div>
+                        <i class='bx bxs-cart add-cart'></i>
+                    </div>
+                    <div class="col-4">
+                        <img src="public/assets/pz1-7.png" alt="">
+                        <div class = "product-title">Pizza Tom</div>
+                        <div class="rating">
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                            <i class='bx bxs-star stars' ></i>
+                        </div>
+                        
+                        <div class="cart-price">$568</div>
+                        <i class='bx bxs-cart add-cart'></i>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="footer">
+      <div class="box">
+          <div class="logo">
+              <img src="public/assets/logopiz.png" width="200px" height="100px" alt="">
+          </div>
+          <p>Cung cấp cho khách hàng sản phẩm chất lượng và đảm bảo cho khách hàng những nguyên liệu và làm ra món ăn tốt nhất</p>
+      </div>
+      <div class="box">
+          <h3>NỘI DUNG</h3>
+          <ul class="quick-menu">
+              <div class="item">
+                  <a href="">Home</a>
+              </div>
+              <div class="item">
+                  <a href="">Menu</a>
+              </div>
+              <div class="item">
+                  <a href="">Blog</a>
+              </div>
+              <div class="item">
+                  <a href="">Help</a>
+              </div>
+              
+          </ul>
+      </div>
+      <div class="box">
+          <h3>LIÊN HỆ</h3>
+          Địa chỉ : 50 Nguyễn Huệ - Thành Phố Huế - Tỉnh Thừa Thiên Huế <br>
+          Hotline : 0365895654
+          <form action="">
+              <input type="text" placeholder="Địa chỉ email">
+              <button>Nhận tin</button>
+          </form>
+      </div>
+  </div>
+</div>
+
+
+    <!-------------js for toggle menu--------->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px";
+            }
+            else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!---------------js for product gallery---------->
+    <script>
+        var productimg = document.getElementById("productimg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            productimg.src = SmallImg[0].src
+        }
+        SmallImg[1].onclick = function () {
+            productimg.src = SmallImg[1].src
+        }
+        SmallImg[2].onclick = function () {
+            productimg.src = SmallImg[2].src
+        }
+        SmallImg[3].onclick = function () {
+            productimg.src = SmallImg[3].src
+        }
+    </script>
+    <script src="./public/js/details.js"></script>
+    <script src="./public/js/products.js"></script>
+    <script src="./public/js/cart.js"></script>
+    <script>
+        $(document).ready(function () {
+            loadCart()
+        });
+    </script>
+</body>
+
+</html>
